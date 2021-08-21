@@ -66,6 +66,10 @@ html {
     display: none;
 }
 
+#mobile__menu {
+    display: none ;
+}
+
 @media(max-width: 768px) {
     .nav__toggler {
         display: block;
@@ -92,6 +96,44 @@ html {
     .header__title h1 {
         padding: 50px 0;
         font-size: 3rem;
+    }
+
+    #mobile__menu {
+        width: 90%;
+        height: 350px;
+        background: white;
+        display: block;
+        position: absolute;
+        top: 100px;
+        left: 20px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #mobile__menu li {
+        list-style: none;
+        margin-bottom: 40px;
+        font-family: 'Barlow', sans-serif;
+        font-size: 20px;
+        color: hsl(213, 9%, 39%);
+        cursor: pointer;
+       
+
+    }
+
+    #mobile__menu button {
+        height: 50px;
+        width: 120px;
+        border-radius: 30px;
+        font-family: 'Fraunces', serif;
+        text-transform: uppercase;
+        background: hsl(51, 100%, 49%);
+        border: none;
+        cursor: pointer;
+
     }
 }
 
@@ -364,6 +406,10 @@ html {
         flex-basis: 90%;
     }
 
+    .testimonial__header {
+        font-size: 0.6rem;
+    }
+
     
 }
 
@@ -415,14 +461,18 @@ html {
     display: flex;
     list-style: none;
     text-transform: capitalize;
-    gap: 40px;
+    
 }
 
 .footer__social ul {
     padding: 20px 0;
     display: flex;
     list-style: none;
-    gap: 2rem;
+    
+}
+
+.footer__social li, .footer__nav li {
+    padding: 0 20px;
 }
 
 .footer__nav li:hover {
